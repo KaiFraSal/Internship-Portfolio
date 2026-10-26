@@ -1,10 +1,10 @@
 export default function Skills() {
   return (
-    <section id="Skills-Section" className="w-full bg-stone-950 min-h-screen py-16 text-white relative overflow-hidden">
+    <section id="Skills-Section" className="w-full bg-linear-to-t from-orange-400 to-orange-300 min-h-screen py-16 text-black relative overflow-hidden">
       
-      <div className="absolute top-0 inset-x-0 h-32 bg-gradient-to-b from-orange-300 to-stone-950 to-60% pointer-events-none" />
+      <div className="absolute top-0 inset-x-0 h-32 bg-gradient-to-b from-orange-300 to-orange-250 to-60% pointer-events-none" />
 
-      <div className="absolute bottom-0 inset-x-0 h-32 bg-gradient-to-t from-orange-300 to-stone-950 to-60% pointer-events-none" />
+      <div className="absolute bottom-0 inset-x-0 h-32 bg-gradient-to-t from-orange-300 to-orange-320 to-90% pointer-events-none" />
 
       <div className="section-container mx-auto px-4 flex flex-col items-center">
         
@@ -13,8 +13,8 @@ export default function Skills() {
         <div className="flex flex-col-reverse items-center md:flex-row md:items-start md:justify-around mb-12 w-full gap-8">
             <div className="w-full md:w-[45%] flex flex-col">
                 <h3 className="text-4xl font-bold mb-3">Languages</h3>
-                <p className="text-xl mb-3 text-slate-200">I have learned these various languages used in development thoughout my time developing projects learning one after another enabling me to utilize efficient frameworks</p>
-                <p className="text-lg text-slate-300">Languages: JavaScript, HTML, CSS, TypeScript, Python, C++, Java, Kotlin, SQL</p>
+                <p className="text-xl mb-3 text-black">I have learned these various languages used in development thoughout my time developing projects learning one after another enabling me to utilize efficient frameworks</p>
+                <p className="text-lg text-black">Languages: JavaScript, HTML, CSS, TypeScript, Python, C++, Java, Kotlin, SQL</p>
             </div>
 
             <div className="w-full md:w-[45%] h-[300px] bg-white/24 border border-white/20 backdrop-blur-md rounded-2xl relative p-6 shadow-xl">
@@ -29,8 +29,8 @@ export default function Skills() {
         <div className="flex flex-col-reverse items-center md:flex-row md:items-start md:justify-around mb-12 w-full gap-8">
           <div className="w-full md:w-[45%] flex flex-col">
             <h3 className="text-4xl font-bold mb-3">Frameworks & Libraries</h3>
-            <p className="text-xl mb-3 text-slate-200">Powerful toolsets that stream line the development process that I have adopted and adapted to.</p>
-            <p className="text-lg text-slate-300">Frameworks & Libraries: React, React Native, Tailwind, Flutter</p>
+            <p className="text-xl mb-3 text-black">Powerful toolsets that stream line the development process that I have adopted and adapted to.</p>
+            <p className="text-lg text-black">Frameworks & Libraries: React, React Native, Tailwind, Flutter</p>
           </div>
           <div className="w-full md:w-[45%] h-[300px] bg-white/24 border border-white/20 backdrop-blur-md rounded-2xl relative p-6 shadow-xl">
             <img src="src/assets/react.svg" className="w-40 absolute top-8 left-5"/>
@@ -42,8 +42,8 @@ export default function Skills() {
         <div className="flex flex-col-reverse items-center md:flex-row md:items-start md:justify-around mb-12 w-full gap-8">
           <div className="w-full md:w-[45%] flex flex-col">
             <h3 className="text-4xl font-bold mb-3">Tools & Databases</h3>
-            <p className="text-xl mb-3 text-slate-200">These are the tools and databases that have word hand in hand to ensure everything goes smoothly utility and backend wise.</p>
-            <p className="text-lg text-slate-300">Tools & Databases: Supabase, Git, Github, Vercel, WordPress, Firebase, PostgreSQL</p>
+            <p className="text-xl mb-3 text-black">These are the tools and databases that have word hand in hand to ensure everything goes smoothly utility and backend wise.</p>
+            <p className="text-lg text-black">Tools & Databases: Supabase, Git, Github, Vercel, WordPress, Firebase, PostgreSQL</p>
           </div>
           <div className="w-full md:w-[45%] h-[300px] bg-white/24 border border-white/20 backdrop-blur-md rounded-2xl relative p-6 shadow-xl">
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/supabase/supabase-original.svg" className="w-30 absolute top-5 left-5"/>
@@ -59,8 +59,8 @@ export default function Skills() {
         <div className="flex flex-col-reverse items-center md:flex-row md:items-start md:justify-around w-full gap-8">
           <div className="w-full md:w-[45%] flex flex-col z-10">
             <h3 className="text-4xl font-bold mb-3">Other Skills</h3>
-            <p className="text-xl mb-3 text-slate-200">These are various miscellaneous skills I have gained over my time developing projects and along the way picked up to futher expand my skill set</p>
-            <p className="text-lg text-slate-300">Other Technical Skills: Figma, Canva, Microsoft Excel, Google Sheets</p>
+            <p className="text-xl mb-3 text-black">These are various miscellaneous skills I have gained over my time developing projects and along the way picked up to futher expand my skill set</p>
+            <p className="text-lg text-black">Other Technical Skills: Figma, Canva, Microsoft Excel, Google Sheets</p>
           </div>
           <div className="w-full md:w-[45%] h-[300px] bg-white/24 border border-white/20 backdrop-blur-md rounded-2xl relative p-6 shadow-xl">
             

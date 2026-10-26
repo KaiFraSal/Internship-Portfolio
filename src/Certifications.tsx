@@ -19,8 +19,6 @@ export default function Certifications() {
   const activeCert = certificationsData[currentIndex];
 
   return (
-    // bg-linear-to-t from-sky-200 to-white to-25%
-
     <section id="Certifications-Section" className="w-full xl:min-h-screen py-16 flex flex-col items-center relative overflow-hidden text-black">
         
         <div className="absolute top-0 inset-x-0 h-32 bg-gradient-to-b from-orange-300 to-white to-90% pointer-events-none" />
