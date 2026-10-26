@@ -9,7 +9,7 @@ export default function Navbar() {
           <div className="flex flex-wrap items-center justify-between mx-auto px-6 py-3">
 
             <a href="#Header-Section" className="flex items-center space-x-3 rtl:space-x-reverse">
-                <img src="public/k.png" className="h-7" alt="Portfolio Logo" />
+                <img src="/assets/k.png" className="h-7" alt="Portfolio Logo" />
                 <span className="self-center text-xl text-white font-semibold whitespace-nowrap">Portfolio</span>
             </a>
 
