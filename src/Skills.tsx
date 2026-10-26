@@ -1,3 +1,7 @@
+import reactImg from "/src/assets/react.svg";
+import wordPressImg from "/src/assets/wordpress-color.svg"
+import googleSheetsImg from "/src/assets/Google_Sheets.svg"
+
 export default function Skills() {
   return (
     <section id="Skills-Section" className="w-full bg-linear-to-t from-orange-400 to-orange-300 min-h-screen py-16 text-black relative overflow-hidden">
@@ -33,7 +37,7 @@ export default function Skills() {
             <p className="text-lg text-black">Frameworks & Libraries: React, React Native, Tailwind, Flutter</p>
           </div>
           <div className="w-full md:w-[45%] h-[300px] bg-white/24 border border-white/20 backdrop-blur-md rounded-2xl relative p-6 shadow-xl">
-            <img src="/src/assets/react.svg" className="w-40 absolute top-8 left-5"/>
+            <img src={reactImg} className="w-40 absolute top-8 left-5"/>
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flutter/flutter-original.svg" className="w-40 absolute top-8 right-5"/>
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" className="w-40 absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/16"/>
           </div>
@@ -52,7 +56,7 @@ export default function Skills() {
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" className="w-30 absolute bottom-5 left-5"/>
           
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vercel/vercel-original-wordmark.svg" className="w-30 absolute bottom-5 right-5"/>
-            <img src="/src/assets/wordpress-color.svg" className="w-30 absolute bg-white rounded-full left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2"/>
+            <img src={wordPressImg} className="w-30 absolute bg-white rounded-full left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2"/>
           </div>
         </div>
 
@@ -66,7 +70,7 @@ export default function Skills() {
             
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" className="w-30 absolute top-5 left-5"/>
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/canva/canva-original.svg" className="w-30 absolute top-5 right-5"/>
-            <img src="/src/assets/Google_Sheets.svg" className="w-25 absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/16" />
+            <img src={googleSheetsImg} className="w-25 absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/16" />
           </div>
         </div>
 
