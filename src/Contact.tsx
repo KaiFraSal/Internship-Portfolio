@@ -40,11 +40,11 @@ export default function Contact() {
                 
                 <div className="flex items-center gap-3 pl-2 border-l border-white/20">
                     <a href="https://www.linkedin.com/in/kaizensalvador/" target="_blank" className="p-2 bg-white/10 hover:bg-white/20 border border-white/20 rounded-full text-black transition cursor-pointer flex items-center justify-center">
-                        <img src="src/assets/linkedin.svg" className="w-5 h-5 brightness-0" alt="LinkedIn" />
+                        <img src="/src/assets/linkedin.svg" className="w-5 h-5 brightness-0" alt="LinkedIn" />
                     </a>
                     
                     {/* <a href="#" className="p-2 bg-white/10 hover:bg-white/20 border border-white/20 rounded-full text-black transition cursor-pointer flex items-center justify-center">
-                        <img src="src/assets/github.svg" className="w-5 h-5 brightness-0" alt="GitHub" />
+                        <img src="/src/assets/github.svg" className="w-5 h-5 brightness-0" alt="GitHub" />
                     </a> */}
                 </div>
             </div>

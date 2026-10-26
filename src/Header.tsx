@@ -15,9 +15,9 @@ export default function Header() {
                         Projects
                     </div>
                     <div className="w-full h-[300px] border border-white/20 rounded-2xl relative p-6 shadow-xl">
-                        <img src="src/assets/recycle_foreground2.png" className="w-30 absolute top-3 left-5"/>
-                        <img src="src/assets/brain&board.png" className="w-35 absolute top-2 right-2"/>
-                        <img src="src/assets/john'spcs.png" className="w-30 absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/32 border border-solid"/>
+                        <img src="/src/assets/recycle_foreground2.png" className="w-30 absolute top-3 left-5"/>
+                        <img src="/src/assets/brain&board.png" className="w-35 absolute top-2 right-2"/>
+                        <img src="/src/assets/john'spcs.png" className="w-30 absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/32 border border-solid"/>
                     </div>
                 </a>
 
@@ -26,7 +26,7 @@ export default function Header() {
                         Skills
                     </div>
                     <div className="w-full h-[300px] border border-white/20 rounded-2xl relative p-6 shadow-xl">
-                        <img src="src/assets/react.svg" className="w-30 absolute top-8 left-5"/>
+                        <img src="/src/assets/react.svg" className="w-30 absolute top-8 left-5"/>
                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" className="w-25 absolute top-8 right-5 -rotate-9"/>
                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/supabase/supabase-original.svg" className="w-25 absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/4 rotate-9"/>
                     </div>
@@ -37,8 +37,8 @@ export default function Header() {
                         Certifications
                     </div>
                     <div className="w-full h-[300px] border border-white/20 rounded-2xl relative p-6 shadow-xl">
-                        <img src="src/assets/cyberops-associate.png" className="w-30 absolute top-24 left-5 rotate-9"/>
-                        <img src="src/assets/microsoft-office-specialist-excel-associate-office-2019.png" className="w-30 absolute top-8 right-5"/>
+                        <img src="/src/assets/cyberops-associate.png" className="w-30 absolute top-24 left-5 rotate-9"/>
+                        <img src="/src/assets/microsoft-office-specialist-excel-associate-office-2019.png" className="w-30 absolute top-8 right-5"/>
                     </div>
                 </a>
 
