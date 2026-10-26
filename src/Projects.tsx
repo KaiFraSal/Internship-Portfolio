@@ -50,8 +50,8 @@ export default function Projects() {
   };
 
 return (
-    <section id="Projects-Section" className="section-container border-3 border-solid border-yellow-500 h-screen">
-      <h2 className="text-3xl font-bold mb-10 text-center">My Projects</h2>
+    <section id="Projects-Section" className="section-container border-3 border-solid border-yellow-500 min-h-screen">
+      <h2 className="text-7xl font-bold mb-10 text-center">My Projects</h2>
 
       <div id="default-carousel" className="relative w-full">
           
@@ -77,7 +77,7 @@ return (
           </div>
 
           {projectPages.length > 1 && (
-              <div className="absolute z-20 flex -translate-x-1/2 -bottom-8 left-1/2 space-x-3 rtl:space-x-reverse">
+              <div className="absolute z-20 flex -translate-x-1/2 bottom-2 left-1/2 space-x-3 rtl:space-x-reverse">
                   {projectPages.map((_, idx) => (
                       <button
                           key={idx}

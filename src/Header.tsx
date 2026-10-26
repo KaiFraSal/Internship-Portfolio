@@ -1,7 +1,7 @@
 export default function Header() {
 
   return (
-    <header id="Header-Section" className="section-container border-3 border-solid border-blue-500 md:h-screen max-md:h-[1300px] px-10">
+    <header id="Header-Section" className="section-container border-3 border-solid border-blue-500 md:min-h-screen md:min-h-[410px] max-md:h-[1300px] px-10">
         {/* text-[min(12vw,90px)] */}
         <h1 className="text-8xl font-bold mt-16">Kaizen Salvador</h1>
         <p className="text-2xl mx-3 mt-7">4th year BSIT student with a specialization in web and mobile applications.</p>
