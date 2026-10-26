@@ -1,10 +1,3 @@
-import recycleImg from "./assets/recycle_foreground2.png";
-import brainBoardImg from "./assets/brain&board.png";
-import johnPcsImg from "./assets/john'spcs.png";
-import reactImg from "./assets/react.svg";
-import cyberopsImg from "./assets/cyberops-associate.png";
-import excelImg from "./assets/microsoft-office-specialist-excel-associate-office-2019.png";
-
 export default function Header() {
 
   return (
@@ -22,9 +15,9 @@ export default function Header() {
                         Projects
                     </div>
                     <div className="w-full h-[300px] border border-white/20 rounded-2xl relative p-6 shadow-xl">
-                        <img src={recycleImg} className="w-30 absolute top-3 left-5"/>
-                        <img src={brainBoardImg} className="w-35 absolute top-2 right-2"/>
-                        <img src={johnPcsImg} className="w-30 absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/32 border border-solid"/>
+                        <img src="/assets/recycle_foreground2.png" className="w-30 absolute top-3 left-5"/>
+                        <img src="/assets/brain&board.png" className="w-35 absolute top-2 right-2"/>
+                        <img src="/assets/john'spcs.png" className="w-30 absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/32 border border-solid"/>
                     </div>
                 </a>
 
@@ -33,7 +26,7 @@ export default function Header() {
                         Skills
                     </div>
                     <div className="w-full h-[300px] border border-white/20 rounded-2xl relative p-6 shadow-xl">
-                        <img src={reactImg} className="w-30 absolute top-8 left-5"/>
+                        <img src="/assets/react.svg" className="w-30 absolute top-8 left-5"/>
                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" className="w-25 absolute top-8 right-5 -rotate-9"/>
                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/supabase/supabase-original.svg" className="w-25 absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/4 rotate-9"/>
                     </div>
@@ -44,8 +37,8 @@ export default function Header() {
                         Certifications
                     </div>
                     <div className="w-full h-[300px] border border-white/20 rounded-2xl relative p-6 shadow-xl">
-                        <img src={cyberopsImg} className="w-30 absolute top-24 left-5 rotate-9"/>
-                        <img src={excelImg} className="w-30 absolute top-8 right-5"/>
+                        <img src="/assets/cyberops-associate.png" className="w-30 absolute top-24 left-5 rotate-9"/>
+                        <img src="/assets/microsoft-office-specialist-excel-associate-office-2019.png" className="w-30 absolute top-8 right-5"/>
                     </div>
                 </a>
 

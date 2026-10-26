@@ -17,9 +17,9 @@ export const projectsData: Project[] = [
     {
         id: 1,
         projectName: "ReNewvate App",
-        mainImageSrc: "/src/assets/ReNewvate-Splash3.png",
+        mainImageSrc: "/assets/ReNewvate-Splash3.png",
         category: "Mobile App",
-        popupImages: ["/src/assets/mobApptest.png", "/src/assets/webTest.png"],
+        popupImages: ["/assets/mobApptest.png", "/assets/webTest.png"],
         projectDate: "2026",
         location: "Muntinlupa, Metro Manila",
         role: "Main Developer",
@@ -31,7 +31,7 @@ export const projectsData: Project[] = [
     {
         id: 2,
         projectName: "ReNewvate Admin Dashboard",
-        mainImageSrc: "/src/assets/recycle_foreground2.png",
+        mainImageSrc: "/assets/recycle_foreground2.png",
         category: "Web App",
         popupImages: ["/img1.png", "/img2.png"],
         projectDate: "2026",
@@ -45,7 +45,7 @@ export const projectsData: Project[] = [
     {
         id: 3,
         projectName: "Brain & Board",
-        mainImageSrc: "/src/assets/brain&board.png",
+        mainImageSrc: "/assets/brain&board.png",
         category: "Web App",
         popupImages: ["/img1.png", "/img2.png"],
         projectDate: "2025",
@@ -59,7 +59,7 @@ export const projectsData: Project[] = [
     {
         id: 4,
         projectName: "John's PCs",
-        mainImageSrc: "/src/assets/johnspcs.png",
+        mainImageSrc: "/assets/johnspcs.png",
         category: "Web App",
         popupImages: ["/img1.png", "/img2.png"],
         projectDate: "2024",
