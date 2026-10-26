@@ -57,7 +57,8 @@ return (
       
       <div className="section-container mx-auto px-4 flex flex-col items-center">
         
-        <h2 className="text-7xl text-black z-10 font-bold mb-10 text-center">My Projects</h2>
+        <h2 className="text-7xl text-black z-10 mb-2 font-bold text-center">My Projects</h2>
+        <p className="z-10 text-black mb-10">Press cards for more details!</p>
 
         <div id="default-carousel" className="relative section-container">
             

@@ -17,7 +17,7 @@ export const projectsData: Project[] = [
     {
         id: 1,
         projectName: "ReNewvate App",
-        mainImageSrc: "src/assets/recycle_foreground2.png",
+        mainImageSrc: "src/assets/ReNewvate-Splash3.png",
         category: "Mobile App",
         popupImages: ["/src/assets/mobApptest.png", "/src/assets/webTest.png"],
         projectDate: "2026",
