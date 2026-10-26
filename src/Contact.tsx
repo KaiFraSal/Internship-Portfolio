@@ -1,9 +1,9 @@
 export default function Contact() {
   return (
-    <section id="Contact-Section" className="w-full border-y-3 border-solid border-purple-500 h-screen flex flex-col justify-center items-center px-4 bg-radial-[at_50%_145%] from-indigo-900 via-blue-400 to-sky-200 to-90%">
+    <section id="Contact-Section" className="w-full h-screen flex flex-col justify-center items-center px-4 bg-radial-[at_50%_145%] from-indigo-900 via-blue-400 to-sky-200 to-70%">
         
         <div className="max-w-5xl w-full mx-auto flex flex-col justify-center items-center">
-          <h2 className="text-6xl md:text-9xl font-extrabold mb-12 text-center text-black tracking-tight font-IBMPlexSans">
+          <h2 className="text-8xl md:text-9xl font-extrabold mb-12 text-center text-black tracking-tight font-IBMPlexSans">
               Get in touch
           </h2>
           
