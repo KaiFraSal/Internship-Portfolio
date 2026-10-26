@@ -4,7 +4,7 @@ export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-      <nav className="section-container bg-neutral-primary fixed z-20 border-b border-default bg-amber-400 ">
+      <nav className="section-container bg-neutral-primary fixed z-30 border-b border-default bg-amber-400 ">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
 
           <a href="#Header-Section" className="flex items-center space-x-3 rtl:space-x-reverse">
