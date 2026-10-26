@@ -17,7 +17,7 @@ export default function Header() {
                     <div className="w-full h-[300px] border border-white/20 rounded-2xl relative p-6 shadow-xl">
                         <img src="/assets/recycle_foreground2.png" className="w-30 absolute top-3 left-5"/>
                         <img src="/assets/brain&board.png" className="w-35 absolute top-2 right-2"/>
-                        <img src="/assets/john'spcs.png" className="w-30 absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/32 border border-solid"/>
+                        <img src="/assets/johnspcs.png" className="w-30 absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/32 border border-solid"/>
                     </div>
                 </a>
 
