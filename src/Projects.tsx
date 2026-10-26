@@ -100,7 +100,7 @@ return (
                   <button
                       type="button"
                       onClick={handlePrev}
-                      className="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-2 cursor-pointer group focus:outline-none -left-6 sm:-left-10"
+                      className="absolute top-0 start-0 z-20 flex items-center justify-center h-full px-2 cursor-pointer group focus:outline-none -left-6 sm:-left-10"
                   >
                       <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-slate-800/60 border border-slate-700 group-hover:bg-slate-700 group-focus:ring-2 group-focus:ring-blue-500">
                           <svg
@@ -125,7 +125,7 @@ return (
                   <button
                       type="button"
                       onClick={handleNext}
-                      className="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-2 cursor-pointer group focus:outline-none -right-6 sm:-right-10"
+                      className="absolute top-0 end-0 z-20 flex items-center justify-center h-full px-2 cursor-pointer group focus:outline-none -right-6 sm:-right-10"
                   >
                       <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-slate-800/60 border border-slate-700 group-hover:bg-slate-700 group-focus:ring-2 group-focus:ring-blue-500">
                           <svg
