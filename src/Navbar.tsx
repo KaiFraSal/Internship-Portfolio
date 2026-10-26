@@ -45,7 +45,7 @@ export default function Navbar() {
             </div>
           </div>
         </nav>
-        <a href="#Header-Section" className="fixed right-15 bottom-15 bg-amber-600 p-5 rounded-full z-50">Up!</a>
+        {/* <a href="#Header-Section" className="fixed right-15 bottom-15 bg-amber-600 p-5 rounded-full z-50">Up!</a> */}
       </>
   )
 }
