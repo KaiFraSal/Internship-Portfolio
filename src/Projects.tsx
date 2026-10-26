@@ -42,69 +42,75 @@ export default function Projects() {
     };
 
   const handleNext = () => {
-      setCurrentIndex((prev) => (prev === projectPages.length - 1 ? 0 : prev + 1));
-  };
+        setCurrentIndex((prev) => (prev === projectPages.length - 1 ? 0 : prev + 1));
+    };
 
   const handleGoToSlide = (index: number) => {
-      setCurrentIndex(index);
-  };
+        setCurrentIndex(index);
+    };
 
 return (
-    <section id="Projects-Section" className="section-container border-3 border-solid border-yellow-500 min-h-screen">
-      <h2 className="text-7xl font-bold mb-10 text-center">My Projects</h2>
+    <section id="Projects-Section" className="w-full min-h-screen py-16 relative overflow-hidden text-white">
+      
+      <div className="absolute top-0 inset-x-0 h-32 bg-gradient-to-b from-sky-200 to-white to-60% pointer-events-none" />
+      <div className="absolute bottom-0 inset-x-0 h-32 bg-gradient-to-t from-orange-300 to-white to-60% pointer-events-none" />
+      
+      <div className="section-container mx-auto px-4 flex flex-col items-center">
+        
+        <h2 className="text-7xl text-black z-10 font-bold mb-10 text-center">My Projects</h2>
 
-      <div id="default-carousel" className="relative w-full">
-          
-          <div className="relative overflow-hidden rounded-2xl min-h-[780px]">
-              {projectPages.map((pageProjects, pageIdx) => (
-                  <div
-                      key={pageIdx}
-                      className={`duration-700 ease-in-out transition-all ${
-                          pageIdx === currentIndex ? "block" : "hidden"
-                      }`}
-                  >
-                      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 justify-items-center p-2">
+        <div id="default-carousel" className="relative section-container">
+            
+            <div className="relative overflow-hidden rounded-2xl min-h-[780px]">
+                {projectPages.map((pageProjects, pageIdx) => (
+                    <div
+                        key={pageIdx}
+                        className={`duration-700 ease-in-out transition-all ${
+                            pageIdx === currentIndex ? "block" : "hidden"
+                        }`}
+                    >
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-y-8 justify-center justify-items-center max-w-4xl mx-auto p-2">
                           {pageProjects.map((project) => (
-                              <ProjectCard
-                                  key={project.id}
-                                  project={project}
-                                  onClick={() => setSelectedProject(project)}
-                              />
+                            <ProjectCard
+                                key={project.id}
+                                project={project}
+                                onClick={() => setSelectedProject(project)}
+                            />
                           ))}
-                      </div>
-                  </div>
-              ))}
-          </div>
+                        </div>
+                    </div>
+                ))}
+            </div>
 
-          {projectPages.length > 1 && (
-              <div className="absolute z-20 flex -translate-x-1/2 bottom-2 left-1/2 space-x-3 rtl:space-x-reverse">
-                  {projectPages.map((_, idx) => (
-                      <button
-                          key={idx}
-                          type="button"
-                          onClick={() => handleGoToSlide(idx)}
-                          className={`w-3 h-3 rounded-full transition-all ${
-                              idx === currentIndex
-                                  ? "bg-blue-500 w-6"
-                                  : "bg-slate-600 hover:bg-slate-400"
-                          }`}
-                          aria-current={idx === currentIndex ? "true" : "false"}
-                          aria-label={`Slide ${idx + 1}`}
-                      />
-                  ))}
-              </div>
-          )}
+            {projectPages.length > 1 && (
+                <div className="absolute z-20 flex -translate-x-1/2 bottom-0 left-1/2 space-x-3 rtl:space-x-reverse">
+                    {projectPages.map((_, idx) => (
+                        <button
+                            key={idx}
+                            type="button"
+                            onClick={() => handleGoToSlide(idx)}
+                            className={`w-3 h-3 rounded-full transition-all ${
+                                idx === currentIndex
+                                    ? "bg-orange-500 w-6"
+                                    : "bg-slate-600 hover:bg-slate-400"
+                            }`}
+                            aria-current={idx === currentIndex ? "true" : "false"}
+                            aria-label={`Slide ${idx + 1}`}
+                        />
+                    ))}
+                </div>
+            )}
 
-          {projectPages.length > 1 && (
-              <>
+            {projectPages.length > 1 && (
+                <>
                   <button
                       type="button"
                       onClick={handlePrev}
-                      className="absolute top-0 start-0 z-20 flex items-center justify-center h-full px-2 cursor-pointer group focus:outline-none -left-6 sm:-left-10"
+                      className="absolute top-1/2 -translate-y-1/2 start-0 z-20 flex items-center justify-center w-10 h-10 cursor-pointer group focus:outline-none -left-2 sm:-left-5"
                   >
-                      <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-slate-800/60 border border-slate-700 group-hover:bg-slate-700 group-focus:ring-2 group-focus:ring-blue-500">
+                      <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-slate-800/80 border border-slate-700 text-white group-hover:bg-slate-700 shadow-lg">
                           <svg
-                              className="w-5 h-5 text-white rtl:rotate-180"
+                              className="w-5 h-5 rtl:rotate-180"
                               aria-hidden="true"
                               xmlns="http://www.w3.org/2000/svg"
                               fill="none"
@@ -125,11 +131,11 @@ return (
                   <button
                       type="button"
                       onClick={handleNext}
-                      className="absolute top-0 end-0 z-20 flex items-center justify-center h-full px-2 cursor-pointer group focus:outline-none -right-6 sm:-right-10"
+                      className="absolute top-1/2 -translate-y-1/2 end-0 z-20 flex items-center justify-center w-10 h-10 cursor-pointer group focus:outline-none -right-2 sm:-right-5"
                   >
-                      <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-slate-800/60 border border-slate-700 group-hover:bg-slate-700 group-focus:ring-2 group-focus:ring-blue-500">
+                      <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-slate-800/80 border border-slate-700 text-white group-hover:bg-slate-700 shadow-lg">
                           <svg
-                              className="w-5 h-5 text-white rtl:rotate-180"
+                              className="w-5 h-5 rtl:rotate-180"
                               aria-hidden="true"
                               xmlns="http://www.w3.org/2000/svg"
                               fill="none"
@@ -147,7 +153,9 @@ return (
                       </span>
                   </button>
               </>
-          )}
+            )}
+        </div>
+
       </div>
 
       <ProjectModal

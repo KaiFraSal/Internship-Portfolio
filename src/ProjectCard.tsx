@@ -17,7 +17,7 @@ export default function ProjectCard({ project, onClick }: ProjectCardProps) {
             </div>
 
             <div className="flex-1 flex items-center justify-center p-4">
-                <img src={project.mainImageSrc} alt={project.projectName} className="max-h-36 object-contain" />
+                <img src={project.mainImageSrc} alt={project.projectName} className="h-48 object-contain" />
             </div>
 
             <div className="px-4 py-3 border-t border-slate-700 text-slate-400 text-sm font-medium">

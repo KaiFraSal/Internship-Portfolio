@@ -5,8 +5,8 @@ export default function Navbar() {
 
   return (
       <>
-        <nav className="section-container bg-neutral-primary fixed z-30 border-b border-default bg-amber-400 ">
-          <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+        <nav className="section-container bg-neutral-primary fixed z-30 border-b border-default bg-amber-400 rounded-[50px] top-4">
+          <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto px-2 py-2">
 
             <a href="#Header-Section" className="flex items-center space-x-3 rtl:space-x-reverse">
                 <img src="public/k.png" className="h-7" alt="Portfolio Logo" />
@@ -25,21 +25,21 @@ export default function Navbar() {
             </button>
 
             <div className={`${isMenuOpen ? "block" : "hidden"} w-full md:block md:w-auto`} id="navbar-default">
-              <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-default rounded-base bg-neutral-secondary-soft md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-neutral-primary">
+              <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 rounded-base bg-neutral-secondary-soft md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-neutral-primary">
                 <li>
-                  <a href="#Header-Section" className="block py-2 px-3 bg-brand rounded md:bg-transparent md:text-fg-brand md:p-0" aria-current="page">Home</a>
+                  <a href="#Header-Section" className="block py-2 px-3 bg-brand rounded md:bg-transparent md:text-fg-brand md:p-0 hover:bg-amber-500" aria-current="page">Home</a>
                 </li>
                 <li>
-                  <a href="#Projects-Section" className="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">Projects</a>
+                  <a href="#Projects-Section" className="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent hover:bg-amber-500">Projects</a>
                 </li>
                 <li>
-                  <a href="#Skills-Section" className="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">Skills</a>
+                  <a href="#Skills-Section" className="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent hover:bg-amber-500">Skills</a>
                 </li>
                 <li>
-                  <a href="#Certifications-Section" className="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">Certifications</a>
+                  <a href="#Certifications-Section" className="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent hover:bg-amber-500">Certifications</a>
                 </li>
                 <li>
-                  <a href="#Contact-Section" className="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">Contact</a>
+                  <a href="#Contact-Section" className="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent hover:bg-amber-500">Contact</a>
                 </li>
               </ul>
             </div>

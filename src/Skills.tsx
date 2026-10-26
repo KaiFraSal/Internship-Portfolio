@@ -2,7 +2,7 @@ export default function Skills() {
   return (
     <section id="Skills-Section" className="w-full bg-stone-950 min-h-screen py-16 text-white relative overflow-hidden">
       
-      <div className="absolute top-0 inset-x-0 h-32 bg-gradient-to-b from-orange-200 to-stone-950 to-60% pointer-events-none" />
+      <div className="absolute top-0 inset-x-0 h-32 bg-gradient-to-b from-orange-300 to-stone-950 to-60% pointer-events-none" />
 
       <div className="absolute bottom-0 inset-x-0 h-32 bg-gradient-to-t from-orange-300 to-stone-950 to-60% pointer-events-none" />
 
@@ -10,21 +10,11 @@ export default function Skills() {
         
         <h2 className="text-7xl z-10 font-bold mb-16 text-center">Skills</h2>
 
-        <div className="flex flex-col-reverse items-center md:flex-row md:items-start md:justify-around mb-16 w-full gap-8">
+        <div className="flex flex-col-reverse items-center md:flex-row md:items-start md:justify-around mb-12 w-full gap-8">
             <div className="w-full md:w-[45%] flex flex-col">
                 <h3 className="text-4xl font-bold mb-3">Languages</h3>
                 <p className="text-xl mb-3 text-slate-200">I have learned these various languages used in development thoughout my time developing projects learning one after another enabling me to utilize efficient frameworks</p>
                 <p className="text-lg text-slate-300">Languages: JavaScript, HTML, CSS, TypeScript, Python, C++, Java, Kotlin, SQL</p>
-                {/* <div className="flex gap-3">  
-                  <div className="bg-slate-800 text-slate-200 text-xs px-3 py-1 rounded-md border border-slate-700">JavaScript</div>
-                  <div className="bg-slate-800 text-slate-200 text-xs px-3 py-1 rounded-md border border-slate-700">TypeScript</div>
-                  <div className="bg-slate-800 text-slate-200 text-xs px-3 py-1 rounded-md border border-slate-700">HTML</div>
-                  <div className="bg-slate-800 text-slate-200 text-xs px-3 py-1 rounded-md border border-slate-700">CSS</div>
-                  <div className="bg-slate-800 text-slate-200 text-xs px-3 py-1 rounded-md border border-slate-700">Python</div>
-                  <div className="bg-slate-800 text-slate-200 text-xs px-3 py-1 rounded-md border border-slate-700">C++</div>
-                  <div className="bg-slate-800 text-slate-200 text-xs px-3 py-1 rounded-md border border-slate-700">Java</div>
-                  <div className="bg-slate-800 text-slate-200 text-xs px-3 py-1 rounded-md border border-slate-700">Kotlin</div>
-                </div> */}
             </div>
 
             <div className="w-full md:w-[45%] h-[300px] bg-white/24 border border-white/20 backdrop-blur-md rounded-2xl relative p-6 shadow-xl">
@@ -36,7 +26,7 @@ export default function Skills() {
             </div>
         </div>
         
-        <div className="flex flex-col-reverse items-center md:flex-row md:items-start md:justify-around mb-16 w-full gap-8">
+        <div className="flex flex-col-reverse items-center md:flex-row md:items-start md:justify-around mb-12 w-full gap-8">
           <div className="w-full md:w-[45%] flex flex-col">
             <h3 className="text-4xl font-bold mb-3">Frameworks & Libraries</h3>
             <p className="text-xl mb-3 text-slate-200">Powerful toolsets that stream line the development process that I have adopted and adapted to.</p>
@@ -49,7 +39,7 @@ export default function Skills() {
           </div>
         </div>
 
-        <div className="flex flex-col-reverse items-center md:flex-row md:items-start md:justify-around mb-16 w-full gap-8">
+        <div className="flex flex-col-reverse items-center md:flex-row md:items-start md:justify-around mb-12 w-full gap-8">
           <div className="w-full md:w-[45%] flex flex-col">
             <h3 className="text-4xl font-bold mb-3">Tools & Databases</h3>
             <p className="text-xl mb-3 text-slate-200">These are the tools and databases that have word hand in hand to ensure everything goes smoothly utility and backend wise.</p>
@@ -67,7 +57,7 @@ export default function Skills() {
         </div>
 
         <div className="flex flex-col-reverse items-center md:flex-row md:items-start md:justify-around w-full gap-8">
-          <div className="w-full md:w-[45%] flex flex-col">
+          <div className="w-full md:w-[45%] flex flex-col z-10">
             <h3 className="text-4xl font-bold mb-3">Other Skills</h3>
             <p className="text-xl mb-3 text-slate-200">These are various miscellaneous skills I have gained over my time developing projects and along the way picked up to futher expand my skill set</p>
             <p className="text-lg text-slate-300">Other Technical Skills: Figma, Canva, Microsoft Excel, Google Sheets</p>

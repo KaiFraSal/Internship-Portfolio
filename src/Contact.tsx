@@ -9,7 +9,7 @@ export default function Contact() {
           
           <div className="flex flex-wrap gap-4 items-center justify-center text-slate-200 border border-white/20 bg-white/10 backdrop-blur-md rounded-full px-6 py-4 shadow-2xl">
               <span className="text-base md:text-lg font-medium px-2 text-black">
-                  sample@gmail.com
+                  kaizensalvadore@gmail.com
               </span>
               
               <button className="px-4 py-2 bg-white/10 hover:bg-white/20 border border-white/20 rounded-full text-black text-sm font-medium transition shadow-sm">
