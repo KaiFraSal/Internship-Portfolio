@@ -1,9 +1,9 @@
-import recycleImg from "/src/assets/recycle_foreground2.png";
-import brainBoardImg from "/src/assets/brain&board.png";
-import johnPcsImg from "/src/assets/john'spcs.png";
-import reactImg from "/src/assets/react.svg";
-import cyberopsImg from "/src/assets/cyberops-associate.png";
-import excelImg from "/src/assets/microsoft-office-specialist-excel-associate-office-2019.png";
+import recycleImg from "./assets/recycle_foreground2.png";
+import brainBoardImg from "./assets/brain&board.png";
+import johnPcsImg from "./assets/john'spcs.png";
+import reactImg from "./assets/react.svg";
+import cyberopsImg from "./assets/cyberops-associate.png";
+import excelImg from "./assets/microsoft-office-specialist-excel-associate-office-2019.png";
 
 export default function Header() {
 

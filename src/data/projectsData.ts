@@ -59,7 +59,7 @@ export const projectsData: Project[] = [
     {
         id: 4,
         projectName: "John's PCs",
-        mainImageSrc: "/src/assets/john'spcs.png",
+        mainImageSrc: "/src/assets/johnspcs.png",
         category: "Web App",
         popupImages: ["/img1.png", "/img2.png"],
         projectDate: "2024",

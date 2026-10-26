@@ -1,6 +1,6 @@
-import reactImg from "/src/assets/react.svg";
-import wordPressImg from "/src/assets/wordpress-color.svg"
-import googleSheetsImg from "/src/assets/Google_Sheets.svg"
+import reactImg from "./assets/react.svg";
+import wordPressImg from "./assets/wordpress-color.svg"
+import googleSheetsImg from "./assets/Google_Sheets.svg"
 
 export default function Skills() {
   return (

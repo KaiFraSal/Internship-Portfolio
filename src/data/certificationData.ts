@@ -1,5 +1,5 @@
-import cyberOpsImg from "/src/assets/cyberops-associate.png"
-import googleSheetsImg from "/src/assets/microsoft-office-specialist-excel-associate-office-2019.png"
+import cyberOpsImg from "./assets/cyberops-associate.png"
+import googleSheetsImg from "./assets/microsoft-office-specialist-excel-associate-office-2019.png"
 
 export interface Certification {
     id: number;

@@ -1,5 +1,5 @@
-import linkedInImg from "/src/assets/linkedin.svg";
-import gitHubImg from "/src/assets/github.svg";
+import linkedInImg from "./assets/linkedin.svg";
+import gitHubImg from "./assets/github.svg";
 
 import { useState } from "react";
 
