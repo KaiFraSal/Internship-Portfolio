@@ -67,7 +67,7 @@ export default function Contact() {
 
                 <div className="flex-1 w-full bg-zinc-900 p-4">
                     <iframe 
-                        src="src/assets/resume.pdf"
+                        src="/assets/Kaizen_Salvador_Resume.pdf"
                         className="w-full h-full rounded-xl border border-white/10"
                         title="Resume PDF"
                     />
@@ -75,7 +75,7 @@ export default function Contact() {
 
                 <div className="flex justify-end gap-3 px-6 py-3 border-t border-white/10 bg-zinc-950/50">
                     <a 
-                        href="src/assets/resume.pdf" 
+                        href="/assets/Kaizen_Salvador_Resume.pdf" 
                         download 
                         className="bg-amber-400 text-black font-semibold px-4 py-2 rounded-lg hover:bg-amber-300 transition text-sm"
                     >
