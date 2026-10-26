@@ -9,13 +9,13 @@ import Skills from './Skills'
 export default function App() {
 
   return (
-    <>
-      <Header/>
+    <div className='flex flex-col items-center'>
       <Navbar/>
+      <Header/>
       <Projects/>
       <Skills/>
       <Contact/>
       <Footer/>
-    </>
+    </div>
   )
 }
