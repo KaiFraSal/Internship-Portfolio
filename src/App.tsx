@@ -1,4 +1,5 @@
 import './App.css'
+import Certifications from './Certifications'
 import Contact from './Contact'
 import Footer from './Footer'
 import Header from './Header'
@@ -14,6 +15,7 @@ export default function App() {
       <Header/>
       <Projects/>
       <Skills/>
+      <Certifications/>
       <Contact/>
       <Footer/>
     </div>
