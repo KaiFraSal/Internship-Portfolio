@@ -10,7 +10,7 @@ export default function Header() {
             
             <div className="flex flex-col md:flex-row md:justify-center py-16 md:space-x-[-30px] space-y-6 md:space-y-0 relative w-full">
                 
-                <a href="#Projects-Section" className="headerCard rotate-2 top-10 left-10 sm:rotate-3 max-md:absolute sm:left-10 2xl:top-50 2xl:left-1/32 md:mt-[20%]">
+                <a href="#Projects-Section" className="headerCard rotate-2 top-10 left-10 sm:rotate-3 max-md:absolute sm:left-10 2xl:top-50 2xl:left-1/32 md:mt-[20%] hover:rotate-0">
                     <div className="headerCardTitle">
                         Projects
                     </div>
@@ -21,7 +21,7 @@ export default function Header() {
                     </div>
                 </a>
 
-                <a href="#Skills-Section" className="headerCard -rotate-10 top-75 right-18 sm:-rotate-8 max-md:absolute sm:top-70 sm:right-10 2xl:top-5 2xl:left-1/4">
+                <a href="#Skills-Section" className="headerCard -rotate-10 top-75 right-18 sm:-rotate-8 max-md:absolute sm:top-70 sm:right-10 2xl:top-5 2xl:left-1/4 hover:rotate-0">
                     <div className="headerCardTitle">
                         Skills
                     </div>
@@ -32,7 +32,7 @@ export default function Header() {
                     </div>
                 </a>
 
-                <a href="#Certifications-Section" className="headerCard rotate-9 top-145 left-27 sm:rotate-5 max-md:absolute sm:top-140 sm:left-37 2xl:top-50 2xl:left-1/3 md:mt-[20%]">
+                <a href="#Certifications-Section" className="headerCard rotate-9 top-145 left-27 sm:rotate-5 max-md:absolute sm:top-140 sm:left-37 2xl:top-50 2xl:left-1/3 md:mt-[20%] hover:rotate-0">
                     <div className="headerCardTitle">
                         Certifications
                     </div>

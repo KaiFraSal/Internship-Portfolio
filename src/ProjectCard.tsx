@@ -10,18 +10,19 @@ export default function ProjectCard({ project, onClick }: ProjectCardProps) {
     return (
         <div 
             onClick={onClick}
-            className="h-90 w-80 bg-slate-900 border-2 border-slate-700 rounded-2xl overflow-hidden shadow-lg cursor-pointer transform transition duration-300 hover:scale-105 hover:border-blue-500 flex flex-col justify-between"
+            className="h-96 w-80 bg-zinc-900/60 backdrop-blur-md border border-white/20 rounded-2xl overflow-hidden shadow-xl cursor-pointer transform transition-all duration-300 hover:scale-105 hover:border-orange-400/80 hover:shadow-orange-500/20 flex flex-col justify-between group"
         >
-            <div className="flex pl-4 items-center h-14 bg-slate-800/50 border-b border-slate-700 text-lg font-bold text-white">
+            <div className="flex px-5 items-center h-14 border-b border-white/10 text-lg font-bold text-white group-hover:text-orange-400 transition-colors">
                 {project.projectName}
             </div>
 
-            <div className="flex-1 flex items-center justify-center p-4">
-                <img src={project.mainImageSrc} alt={project.projectName} className="h-48 object-contain" />
+            <div className="flex-1 flex items-center justify-center p-6 bg-black/20">
+                <img src={project.mainImageSrc} alt={project.projectName} className="h-44 w-full object-contain drop-shadow-md group-hover:scale-105 transition-transform duration-300" />
             </div>
 
-            <div className="px-4 py-3 border-t border-slate-700 text-slate-400 text-sm font-medium">
-                {project.category}
+            <div className="px-5 py-3 border-t border-white/10 flex items-center justify-between text-slate-300 text-sm font-medium">
+                <span>{project.category}</span>
+                <span className="text-orange-400 text-xs font-semibold opacity-0 group-hover:opacity-100 transition-opacity">View Details →</span>
             </div>
         </div>
     );
