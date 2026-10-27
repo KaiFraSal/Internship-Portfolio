@@ -2,7 +2,7 @@ import { useState } from "react";
 
 export default function Contact() {
 
-  const emailText = "sample@gmail.com";
+  const emailText = "kaizensalvadore@gmail.com";
   const [copied, setCopied] = useState(false);
   const [isResumeOpen, setIsResumeOpen] = useState(false);
 
