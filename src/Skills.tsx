@@ -1,10 +1,9 @@
 export default function Skills() {
   	return (
-		<section id="Skills-Section" className="w-full bg-linear-to-t from-orange-400 to-orange-300 min-h-screen py-16 text-black relative overflow-hidden">
+		<section id="Skills-Section" className="w-full bg-linear-to-b from-orange-200 from-10% via-white to-sky-200 to-90% min-h-screen py-16 text-black relative overflow-hidden">
 		
-		<div className="absolute top-0 inset-x-0 h-32 bg-gradient-to-b from-orange-300 to-orange-250 to-60% pointer-events-none" />
-
-		<div className="absolute bottom-0 inset-x-0 h-32 bg-gradient-to-t from-orange-300 to-orange-320 to-90% pointer-events-none" />
+		{/* <div className="absolute top-0 inset-x-0 h-32 bg-gradient-to-b from-orange-100 to-orange-200 pointer-events-none" />
+		<div className="absolute bottom-0 inset-x-0 h-32 bg-gradient-to-t from-sky-100 to-sky-200 pointer-events-none" /> */}
 
 		<div className="section-container mx-auto px-4 flex flex-col items-center">
 			
@@ -17,7 +16,7 @@ export default function Skills() {
 					<p className="text-lg text-black">Languages: JavaScript, HTML, CSS, TypeScript, Python, C++, Java, Kotlin, SQL</p>
 				</div>
 
-				<div className="w-full md:w-[45%] h-[300px] bg-white/24 border border-white/20 backdrop-blur-md rounded-2xl relative p-6 shadow-xl">
+				<div className="w-full md:w-[45%] h-[300px] bg-black/20 border border-white/20 backdrop-blur-md rounded-2xl relative p-6 shadow-xl">
 					<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" className="w-30 absolute top-5 left-5" />
 					<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" className="w-30 absolute top-5 right-5"/>
 					<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css/css-original.svg" className="w-30 absolute bottom-5 left-5"/>
@@ -32,7 +31,7 @@ export default function Skills() {
 				<p className="text-xl mb-3 text-black">Powerful toolsets that stream line the development process that I have adopted and adapted to.</p>
 				<p className="text-lg text-black">Frameworks & Libraries: React, React Native, Tailwind, Flutter</p>
 			</div>
-			<div className="w-full md:w-[45%] h-[300px] bg-white/24 border border-white/20 backdrop-blur-md rounded-2xl relative p-6 shadow-xl">
+			<div className="w-full md:w-[45%] h-[300px] bg-black/20 border border-white/20 backdrop-blur-md rounded-2xl relative p-6 shadow-xl">
 				<img src="/assets/react.svg" className="w-40 absolute top-8 left-5"/>
 				<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flutter/flutter-original.svg" className="w-40 absolute top-8 right-5"/>
 				<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" className="w-40 absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/16"/>
@@ -45,7 +44,7 @@ export default function Skills() {
 				<p className="text-xl mb-3 text-black">These are the tools and databases that have word hand in hand to ensure everything goes smoothly utility and backend wise.</p>
 				<p className="text-lg text-black">Tools & Databases: Supabase, Git, Github, Vercel, WordPress, Firebase, PostgreSQL</p>
 			</div>
-			<div className="w-full md:w-[45%] h-[300px] bg-white/24 border border-white/20 backdrop-blur-md rounded-2xl relative p-6 shadow-xl">
+			<div className="w-full md:w-[45%] h-[300px] bg-black/20 border border-white/20 backdrop-blur-md rounded-2xl relative p-6 shadow-xl">
 				<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/supabase/supabase-original.svg" className="w-30 absolute top-5 left-5"/>
 				<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" className="w-30 absolute top-5 right-5"/>
 				
@@ -62,7 +61,7 @@ export default function Skills() {
 				<p className="text-xl mb-3 text-black">These are various miscellaneous skills I have gained over my time developing projects and along the way picked up to futher expand my skill set</p>
 				<p className="text-lg text-black">Other Technical Skills: Figma, Canva, Microsoft Excel, Google Sheets</p>
 			</div>
-			<div className="w-full md:w-[45%] h-[300px] bg-white/24 border border-white/20 backdrop-blur-md rounded-2xl relative p-6 shadow-xl">
+			<div className="w-full md:w-[45%] h-[300px] bg-black/20 border border-white/20 backdrop-blur-md rounded-2xl relative p-6 shadow-xl">
 				
 				<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" className="w-30 absolute top-5 left-5"/>
 				<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/canva/canva-original.svg" className="w-30 absolute top-5 right-5"/>

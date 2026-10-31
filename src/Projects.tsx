@@ -50,10 +50,10 @@ export default function Projects() {
     };
 
     return (
-        <section id="Projects-Section" className="w-full min-h-screen py-16 relative overflow-hidden text-white">
+        <section id="Projects-Section" className="w-full min-h-screen py-16 relative overflow-hidden text-white bg-orange-200">
         
-        <div className="absolute top-0 inset-x-0 h-32 bg-gradient-to-b from-sky-200 to-white to-60% pointer-events-none" />
-        <div className="absolute bottom-0 inset-x-0 h-32 bg-gradient-to-t from-orange-300 to-white to-60% pointer-events-none" />
+        {/* <div className="absolute top-0 inset-x-0 h-32 bg-gradient-to-b from-orange-200 to-white pointer-events-none" />
+        <div className="absolute bottom-0 inset-x-0 h-32 bg-gradient-to-t from-orange-100 to-white pointer-events-none" /> */}
         
         <div className="section-container mx-auto px-4 flex flex-col items-center">
             
@@ -92,7 +92,7 @@ export default function Projects() {
                                 onClick={() => handleGoToSlide(idx)}
                                 className={`w-3 h-3 rounded-full transition-all ${
                                     idx === currentIndex
-                                        ? "bg-orange-500 w-6"
+                                        ? "bg-sky-500 w-6"
                                         : "bg-slate-600 hover:bg-slate-400"
                                 }`}
                                 aria-current={idx === currentIndex ? "true" : "false"}

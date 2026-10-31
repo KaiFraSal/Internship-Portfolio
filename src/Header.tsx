@@ -1,7 +1,7 @@
 export default function Header() {
 
     return (
-        <header id="Header-Section" className="w-full bg-radial-[at_50%_5%] from-indigo-900 via-blue-400 to-sky-200 to-70% md:min-h-screen md:min-h-[410px] max-md:h-[1300px] py-16 relative overflow-hidden text-white">
+        <header id="Header-Section" className="w-full bg-radial-[at_50%_5%] from-amber-700 via-orange-300 to-orange-200 to-70% md:min-h-screen md:min-h-[410px] max-md:h-[1400px] py-16 relative overflow-hidden text-white">
             <div className="max-w-6xl w-full mx-auto px-4 flex flex-col items-center">
                 
                 <h1 className="text-8xl font-bold mt-16 text-white drop-shadow-md">Kaizen Salvador</h1>
@@ -13,7 +13,7 @@ export default function Header() {
                         <div className="headerCardTitle">
                             Projects
                         </div>
-                        <div className="w-full h-[300px] border border-white/20 rounded-2xl relative p-6 shadow-xl">
+                        <div className="w-full h-[300px] relative p-6 shadow-xl">
                             <img src="/assets/recycle_foreground2.png" className="w-30 absolute top-3 left-5"/>
                             <img src="/assets/brain&board.png" className="w-35 absolute top-2 right-2"/>
                             <img src="/assets/johnspcs.png" className="w-30 absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/32 border border-solid"/>

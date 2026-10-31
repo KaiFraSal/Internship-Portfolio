@@ -19,11 +19,10 @@ export default function Certifications() {
   const activeCert = certificationsData[currentIndex];
 
   return (
-    <section id="Certifications-Section" className="w-full xl:min-h-screen py-16 flex flex-col items-center relative overflow-hidden text-black">
+    <section id="Certifications-Section" className="w-full xl:min-h-screen py-16 flex flex-col items-center relative overflow-hidden text-black bg-sky-200">
         
-        <div className="absolute top-0 inset-x-0 h-32 bg-gradient-to-b from-orange-300 to-white to-90% pointer-events-none" />
-
-        <div className="absolute bottom-0 inset-x-0 h-32 bg-gradient-to-t from-sky-200 to-white to-90% pointer-events-none" />
+        {/* <div className="absolute top-0 inset-x-0 h-32 bg-gradient-to-b from-sky-100 to-white pointer-events-none" />
+        <div className="absolute bottom-0 inset-x-0 h-32 bg-gradient-to-t from-sky-200 to-white pointer-events-none" /> */}
 
         <div className="max-w-6xl w-full mx-auto px-4 flex flex-col items-center">
             
@@ -92,7 +91,7 @@ export default function Certifications() {
                     </button>
                 </div>
 
-                <div className="flex flex-col w-full min-[860px]:w-1/2 border border-white/20 bg-white/10 backdrop-blur-md p-8 rounded-2xl shadow-xl text-black">
+                <div className="flex flex-col w-full min-[860px]:w-1/2 border border-white/20 bg-black/10 backdrop-blur-md p-8 rounded-2xl shadow-xl text-black">
                     <h3 className="text-4xl font-bold mb-4">{activeCert.title}</h3>
                     <div className="flex flex-wrap gap-2 mb-4">
                         <span className="text-sm bg-blue-600/30 text-blue-900 px-3 py-1 rounded-full border border-blue-400/40">
