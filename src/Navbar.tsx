@@ -45,19 +45,19 @@ export default function Navbar() {
 					<div className={`${isMenuOpen ? "block" : "hidden"} w-full md:block md:w-auto`} id="navbar-default">
 						<ul className="font-medium flex flex-col p-4 md:p-0 rounded-2xl md:bg-transparent md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 text-center">
 							<li>
-								<a href="#Header-Section" className="bg-black/20 rounded-[25px] block py-2  text-slate-200 font-semibold md:p-0 hover:text-amber-400 transition" aria-current="page">Home</a>
+								<a href="#Header-Section" className={`${isMenuOpen ? "bg-black/20 rounded-[25px]" : "bg-none"} block py-2  text-slate-200 font-semibold md:p-0 hover:text-amber-400 transition`}>Home</a>
 							</li>
 							<li>
-								<a href="#Projects-Section" className="bg-black/20 rounded-[25px] mt-1 block py-2 px-3 text-slate-200 md:p-0 hover:text-amber-400 transition">Projects</a>
+								<a href="#Projects-Section" className={`${isMenuOpen ? "bg-black/20 rounded-[25px] mt-1" : "bg-none"} block py-2 px-3 text-slate-200 md:p-0 hover:text-amber-400 transition`}>Projects</a>
 							</li>
 							<li>
-								<a href="#Skills-Section" className="bg-black/20 rounded-[25px] mt-1 block py-2 px-3 text-slate-200 md:p-0 hover:text-amber-400 transition">Skills</a>
+								<a href="#Skills-Section" className={`${isMenuOpen ? "bg-black/20 rounded-[25px] mt-1" : "bg-none"} block py-2 px-3 text-slate-200 md:p-0 hover:text-amber-400 transition`}>Skills</a>
 							</li>
 							<li>
-								<a href="#Certifications-Section" className="bg-black/20 rounded-[25px] mt-1 block py-2 px-3 text-slate-200 md:p-0 hover:text-amber-400 transition">Certifications</a>
+								<a href="#Certifications-Section" className={`${isMenuOpen ? "bg-black/20 rounded-[25px] mt-1" : "bg-none"} block py-2 px-3 text-slate-200 md:p-0 hover:text-amber-400 transition`}>Certifications</a>
 							</li>
 							<li>
-								<a href="#Contact-Section" className="bg-black/20 rounded-[25px] mt-1 block py-2 px-3 text-slate-200 md:p-0 hover:text-amber-400 transition">Contact</a>
+								<a href="#Contact-Section" className={`${isMenuOpen ? "bg-black/20 rounded-[25px] mt-1" : "bg-none"} block py-2 px-3 text-slate-200 md:p-0 hover:text-amber-400 transition`}>Contact</a>
 							</li>
 						</ul>
 					</div>
