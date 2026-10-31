@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import type { Project } from "./data/projectsData";
 
 interface ProjectModalProps {
@@ -8,6 +8,27 @@ interface ProjectModalProps {
 
 export default function ProjectModal({ project, onClose }: ProjectModalProps) {
     const [zoomedImg, setZoomedImg] = useState<string | null>(null);
+    const [pageNumber, setPageNumber] = useState<number>(0);
+
+    const scrollContainerRef = useRef<HTMLDivElement>(null);
+    const thumbnailRefs = useRef<(HTMLDivElement | null)[]>([]);
+
+    useEffect(() => {
+        const activeThumb = thumbnailRefs.current[pageNumber];
+        const container = scrollContainerRef.current;
+
+        if (activeThumb && container) {
+            const scrollLeftPos = 
+                activeThumb.offsetLeft - 
+                container.offsetWidth / 2 + 
+                activeThumb.offsetWidth / 2;
+
+            container.scrollTo({
+                left: scrollLeftPos,
+                behavior: 'smooth'
+            });
+        }
+    }, [pageNumber]);
 
     if (!project) return null;
 
@@ -24,7 +45,7 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
                 
                 <button 
                     onClick={onClose}
-                    className="absolute top-4 right-4 text-slate-400 hover:text-white text-xl font-bold"
+                    className="absolute top-4 right-4 text-slate-400 hover:text-white text-xl font-bold cursor-pointer"
                 >
                     ✕
                 </button>
@@ -45,28 +66,82 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
                     </div>
                 </div>
 
-                <div className="flex flex-col items-center gap-4 py-6">
+                <div className="flex justify-center mt-5 max-h-100 flex-nowrap gap-4">
+                    <button 
+                        onClick={() => {
+                            if(pageNumber > 0){
+                                setPageNumber(pageNumber - 1);
+                            }
+                        }}
+                        className="hover:bg-white/20 active:bg-white/40 text-white px-4 rounded-xl flex items-center cursor-pointer font-semibold select-none transition"
+                    >
+                        <svg className="w-5 h-5 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                            <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m15 19-7-7 7-7"/>
+                        </svg>
+                    </button>
+                    <div 
+                        onClick={() => setZoomedImg(project.popupImages[pageNumber])}
+                        className="bg-zinc-900 border border-zinc-800 rounded-xl overflow-hidden p-2 shadow-inner w-full max-w-3xl flex justify-center items-center cursor-pointer group relative transition hover:border-blue-500"
+                    >
+                        <img 
+                            src={project.popupImages[pageNumber]} 
+                            alt={`${project.projectName} screenshot ${pageNumber + 1}`}
+                            className="w-full h-auto max-h-100 object-contain rounded-lg transition group-hover:scale-[1.01]"
+                        />
+                        <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center text-sm font-semibold text-white rounded-lg">
+                            Click to Zoom
+                        </div>
+                    </div>
+                    <button 
+                        onClick={() => {
+                            if(pageNumber < project.popupImages.length - 1){
+                                setPageNumber(pageNumber + 1);
+                            }
+                        }}
+                        className="hover:bg-white/20 active:bg-white/40 text-white px-4 rounded-xl flex items-center cursor-pointer font-semibold select-none transition"
+                    >
+                        <svg className="w-5 h-5 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                            <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m9 5 7 7-7 7"/>
+                        </svg>
+                    </button>
+                </div>
+
+                <div 
+                    ref={scrollContainerRef}
+                    className="flex flex-nowrap overflow-x-auto gap-4 mt-4 p-2 
+                               [&::-webkit-scrollbar]:h-2.5 
+                               [&::-webkit-scrollbar-track]:bg-zinc-900 
+                               [&::-webkit-scrollbar-track]:rounded-full
+                               [&::-webkit-scrollbar-thumb]:bg-zinc-700 
+                               [&::-webkit-scrollbar-thumb]:rounded-full 
+                               hover:[&::-webkit-scrollbar-thumb]:bg-zinc-500"
+                >
                     {project.popupImages.map((imgSrc, idx) => (
                         <div 
-                            key={idx} 
-                            onClick={() => setZoomedImg(imgSrc)}
-                            className="bg-zinc-900 border border-zinc-800 rounded-xl overflow-hidden p-2 shadow-inner w-full max-w-3xl flex justify-center items-center cursor-pointer group relative transition hover:border-blue-500"
+                            key={idx}
+                            ref={(el) => { thumbnailRefs.current[idx] = el; }}
+                            onClick={() => {
+                                setPageNumber(idx);
+                            }}
+                            className={`w-[180px] h-[110px] flex-shrink-0 ${
+                                pageNumber === idx 
+                                    ? "opacity-100 ring-2 ring-blue-500 border-blue-500" 
+                                    : "opacity-40 border-zinc-800"
+                            } bg-zinc-900 border rounded-xl overflow-hidden p-1 shadow-inner cursor-pointer group relative transition hover:border-blue-500 flex items-center justify-center`}
                         >
                             <img 
                                 src={imgSrc} 
                                 alt={`${project.projectName} screenshot ${idx + 1}`}
-                                className="w-full h-auto max-h-100 object-contain rounded-lg transition group-hover:scale-[1.01]"
+                                className="w-full h-full object-cover rounded-lg transition group-hover:scale-[1.03]"
                             />
-                            <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center text-sm font-semibold text-white rounded-lg">
-                                Click to Zoom 🔍
-                            </div>
                         </div>
                     ))}
                 </div>
 
-                <p className="mt-4 text-slate-300 text-sm leading-relaxed">{project.description}</p>
+                <h3 className="font-semibold text-lg mb-2 mt-4">Descriptions</h3>
+                <p className="text-slate-300 text-sm leading-relaxed">{project.description}</p>
 
-                <h3 className="font-semibold text-lg mb-2">Key Features</h3>
+                <h3 className="font-semibold text-lg mb-2 mt-4">Key Features</h3>
                 <ul className="list-disc list-inside text-slate-300 text-sm space-y-1 mb-6">
                     {project.features.map((feature, idx) => (
                         <li key={idx}>{feature}</li>
@@ -98,7 +173,7 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
                     >
                         <button 
                             onClick={() => setZoomedImg(null)}
-                            className="absolute -top-4 -right-4 text-white bg-zinc-800 hover:bg-zinc-700 w-10 h-10 rounded-full flex items-center justify-center text-xl font-bold border border-zinc-600 shadow-xl z-10"
+                            className="absolute -top-4 -right-4 text-white bg-zinc-800 hover:bg-zinc-700 w-10 h-10 rounded-full flex items-center justify-center text-xl font-bold border border-zinc-600 shadow-xl z-10 cursor-pointer"
                         >
                             ✕
                         </button>
