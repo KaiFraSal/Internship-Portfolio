@@ -1,12 +1,30 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 export default function Navbar() {
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+    const navRef = useRef<HTMLElement>(null);
+
+    useEffect(() => {
+        const handleClickOutside = (event: MouseEvent) => {
+            if (navRef.current && !navRef.current.contains(event.target as Node)) {
+                setIsMenuOpen(false);
+            }
+        };
+
+        if (isMenuOpen) {
+            document.addEventListener("mousedown", handleClickOutside);
+        }
+
+        return () => {
+            document.removeEventListener("mousedown", handleClickOutside);
+        };
+    }, [isMenuOpen]);
+
 	return (
 		<>
-			<nav className="section-container fixed z-30 top-4 left-1/2 -translate-x-1/2 w-[90%] bg-zinc-900/40 backdrop-blur-md border border-white/20 rounded-[50px] shadow-lg shadow-black/10">
-				<div className="flex flex-wrap items-center justify-between mx-auto px-6 py-3">
+			<nav ref={navRef} className="section-container fixed z-30 top-4 left-1/2 -translate-x-1/2 w-[90%] bg-zinc-900/40 backdrop-blur-md border border-white/20 rounded-[25px] shadow-lg shadow-black/10">
+				<div className="flex flex-wrap items-center justify-between mx-auto py-3">
 
 					<a href="#Header-Section" className="flex items-center space-x-3 rtl:space-x-reverse">
 						<img src="/assets/k.png" className="h-7" alt="Portfolio Logo" />
@@ -25,21 +43,21 @@ export default function Navbar() {
 					</button>
 
 					<div className={`${isMenuOpen ? "block" : "hidden"} w-full md:block md:w-auto`} id="navbar-default">
-						<ul className="font-medium flex flex-col p-4 md:p-0 mt-4 rounded-2xl bg-black/40 md:bg-transparent md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0">
+						<ul className="font-medium flex flex-col p-4 md:p-0 rounded-2xl md:bg-transparent md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 text-center">
 							<li>
-								<a href="#Header-Section" className="block py-2 px-3 text-slate-200 font-semibold md:p-0 hover:text-amber-300 transition" aria-current="page">Home</a>
+								<a href="#Header-Section" className="bg-black/20 rounded-[25px] block py-2  text-slate-200 font-semibold md:p-0 hover:text-amber-400 transition" aria-current="page">Home</a>
 							</li>
 							<li>
-								<a href="#Projects-Section" className="block py-2 px-3 text-slate-200 md:p-0 hover:text-amber-400 transition">Projects</a>
+								<a href="#Projects-Section" className="bg-black/20 rounded-[25px] mt-1 block py-2 px-3 text-slate-200 md:p-0 hover:text-amber-400 transition">Projects</a>
 							</li>
 							<li>
-								<a href="#Skills-Section" className="block py-2 px-3 text-slate-200 md:p-0 hover:text-amber-400 transition">Skills</a>
+								<a href="#Skills-Section" className="bg-black/20 rounded-[25px] mt-1 block py-2 px-3 text-slate-200 md:p-0 hover:text-amber-400 transition">Skills</a>
 							</li>
 							<li>
-								<a href="#Certifications-Section" className="block py-2 px-3 text-slate-200 md:p-0 hover:text-amber-400 transition">Certifications</a>
+								<a href="#Certifications-Section" className="bg-black/20 rounded-[25px] mt-1 block py-2 px-3 text-slate-200 md:p-0 hover:text-amber-400 transition">Certifications</a>
 							</li>
 							<li>
-								<a href="#Contact-Section" className="block py-2 px-3 text-slate-200 md:p-0 hover:text-amber-400 transition">Contact</a>
+								<a href="#Contact-Section" className="bg-black/20 rounded-[25px] mt-1 block py-2 px-3 text-slate-200 md:p-0 hover:text-amber-400 transition">Contact</a>
 							</li>
 						</ul>
 					</div>
