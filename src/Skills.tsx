@@ -28,7 +28,7 @@ export default function Skills() {
 			<div className="flex flex-col-reverse items-center md:flex-row md:items-start md:justify-around mb-12 w-full gap-8">
 			<div className="w-full md:w-[45%] flex flex-col">
 				<h3 className="text-4xl font-bold mb-3">Frameworks & Libraries</h3>
-				<p className="text-xl mb-3 text-black">Powerful toolsets that stream line the development process that I have adopted and adapted to.</p>
+				<p className="text-xl mb-3 text-black">Powerful toolsets that streamline the development process that I have adopted and adapted to.</p>
 				<p className="text-lg text-black">Frameworks & Libraries: React, React Native, Tailwind, Flutter</p>
 			</div>
 			<div className="w-full md:w-[45%] h-[300px] bg-black/20 border border-white/20 backdrop-blur-md rounded-2xl relative p-6 shadow-xl">
@@ -41,7 +41,7 @@ export default function Skills() {
 			<div className="flex flex-col-reverse items-center md:flex-row md:items-start md:justify-around mb-12 w-full gap-8">
 			<div className="w-full md:w-[45%] flex flex-col">
 				<h3 className="text-4xl font-bold mb-3">Tools & Databases</h3>
-				<p className="text-xl mb-3 text-black">These are the tools and databases that have word hand in hand to ensure everything goes smoothly utility and backend wise.</p>
+				<p className="text-xl mb-3 text-black">These are the tools and databases that have word hand in hand to ensure everything goes smoothly in terms of utility and backend.</p>
 				<p className="text-lg text-black">Tools & Databases: Supabase, Git, Github, Vercel, WordPress, Firebase, PostgreSQL</p>
 			</div>
 			<div className="w-full md:w-[45%] h-[300px] bg-black/20 border border-white/20 backdrop-blur-md rounded-2xl relative p-6 shadow-xl">
