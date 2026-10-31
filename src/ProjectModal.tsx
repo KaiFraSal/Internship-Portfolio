@@ -30,18 +30,20 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
                 </button>
 
                 <h2 className="text-5xl font-bold mb-5">{project.projectName}</h2>
-                <span className="text-sm bg-blue-600/30 text-blue-400 px-3 p-1 mr-2 rounded-full border border-blue-500/30">
-                    Category: {project.category}
-                </span>
-                <span className="text-sm bg-yellow-600/30 text-yellow-400 px-3 p-1 mr-2 rounded-full border border-yellow-500/30">
-                    When: {project.projectDate}
-                </span>
-                <span className="text-sm bg-green-600/30 text-green-400 px-3 p-1 mr-2 rounded-full border border-green-500/30">
-                    Role: {project.role}
-                </span>
-                <span className="text-sm bg-purple-600/30 text-purple-400 px-3 p-1 mr-2 rounded-full border border-purple-500/30">
-                    Location: {project.location}
-                </span>
+                <div className="flex flex-wrap gap-2">
+                    <div className="text-sm bg-blue-600/30 text-blue-400 px-3 p-1 rounded-full border border-blue-500/30">
+                        Category: {project.category}
+                    </div>
+                    <div className="text-sm bg-yellow-600/30 text-yellow-400 px-3 p-1 rounded-full border border-yellow-500/30">
+                        When: {project.projectDate}
+                    </div>
+                    <div className="text-sm bg-green-600/30 text-green-400 px-3 p-1 rounded-full border border-green-500/30">
+                        Role: {project.role}
+                    </div>
+                    <div className="text-sm bg-purple-600/30 text-purple-400 px-3 p-1 rounded-full border border-purple-500/30">
+                        Location: {project.location}
+                    </div>
+                </div>
 
                 <div className="flex flex-col items-center gap-4 py-6">
                     {project.popupImages.map((imgSrc, idx) => (
