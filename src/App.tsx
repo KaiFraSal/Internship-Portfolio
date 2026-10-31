@@ -8,16 +8,15 @@ import Projects from './Projects'
 import Skills from './Skills'
 
 export default function App() {
-
-  return (
-    <div className='flex flex-col items-center'>
-      <Navbar/>
-      <Header/>
-      <Projects/>
-      <Skills/>
-      <Certifications/>
-      <Contact/>
-      <Footer/>
-    </div>
-  )
+	return (
+		<div className='flex flex-col items-center'>
+			<Navbar/>
+			<Header/>
+			<Projects/>
+			<Skills/>
+			<Certifications/>
+			<Contact/>
+			<Footer/>
+		</div>
+	)
 }

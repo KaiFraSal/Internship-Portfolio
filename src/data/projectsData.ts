@@ -19,7 +19,7 @@ export const projectsData: Project[] = [
         projectName: "ReNewvate App",
         mainImageSrc: "/assets/renewvate-mobile.png",
         category: "Mobile App",
-        popupImages: ["/assets/app-image1.png", "/assets/app-image2.png", "/assets/app-image2.png", "/assets/app-image2.png", "/assets/app-image2.png", "/assets/app-image2.png", "/assets/app-image2.png"],
+        popupImages: ["/assets/app-image1.png", "/assets/app-image2.png"],
         projectDate: "2026",
         location: "Muntinlupa, Metro Manila",
         role: "Main Developer",

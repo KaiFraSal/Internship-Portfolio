@@ -13,7 +13,7 @@ export default function Skills() {
 				<div className="w-full md:w-[45%] flex flex-col">
 					<h3 className="text-4xl font-bold mb-3">Languages</h3>
 					<p className="text-xl mb-3 text-black">I have learned these various languages used in development thoughout my time developing projects learning one after another enabling me to utilize efficient frameworks</p>
-					<p className="text-lg text-black">Languages: JavaScript, HTML, CSS, TypeScript, Python, C++, Java, Kotlin, SQL</p>
+					<p className="text-lg text-black">Languages: JavaScript, HTML, CSS, TypeScript, Python, C++, Java, Kotlin, Dart, SQL</p>
 				</div>
 
 				<div className="w-full md:w-[45%] h-[300px] bg-black/20 border border-white/20 backdrop-blur-md rounded-2xl relative p-6 shadow-xl">

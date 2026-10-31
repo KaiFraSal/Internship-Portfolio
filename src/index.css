@@ -18,3 +18,13 @@
     @apply max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 w-full;
   }
 }
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
