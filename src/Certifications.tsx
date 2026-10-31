@@ -26,7 +26,7 @@ export default function Certifications() {
 
         <div className="max-w-6xl w-full mx-auto px-4 flex flex-col items-center">
             
-            <h2 className="text-7xl font-bold mb-10 z-10 text-center">Certifications</h2>
+            <h2 className="text-6xl sm:text-7xl font-bold mb-10 z-10 text-center">Certifications</h2>
 
             <div className="flex flex-col items-center min-h-[620px] min-[860px]:flex-row-reverse min-[860px]:justify-center min-[860px]:items-center gap-8 w-full mb-7">
                 

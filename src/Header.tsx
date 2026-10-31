@@ -4,7 +4,7 @@ export default function Header() {
         <header id="Header-Section" className="w-full bg-radial-[at_50%_5%] from-amber-700 via-orange-300 to-orange-200 to-70% md:min-h-screen md:min-h-[410px] max-md:h-[1400px] py-16 relative overflow-hidden text-white">
             <div className="max-w-6xl w-full mx-auto px-4 flex flex-col items-center">
                 
-                <h1 className="text-8xl font-bold mt-16 text-white drop-shadow-md">Kaizen Salvador</h1>
+                <h1 className="text-7xl sm:text-8xl font-bold mt-16 text-white drop-shadow-md">Kaizen Salvador</h1>
                 <p className="text-2xl mt-7 text-white max-w-2xl">4th year BSIT student with a specialization in web and mobile applications.</p>
                 
                 <div className="flex flex-col md:flex-row md:justify-center py-16 md:space-x-[-30px] space-y-6 md:space-y-0 relative w-full">

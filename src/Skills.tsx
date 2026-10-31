@@ -7,7 +7,7 @@ export default function Skills() {
 
 		<div className="section-container mx-auto px-4 flex flex-col items-center">
 			
-			<h2 className="text-7xl z-10 font-bold mb-16 text-center">Skills</h2>
+			<h2 className="text-6xl sm:text-7xl z-10 font-bold mb-16 text-center">Skills</h2>
 
 			<div className="flex flex-col-reverse items-center md:flex-row md:items-start md:justify-around mb-12 w-full gap-8">
 				<div className="w-full md:w-[45%] flex flex-col">
