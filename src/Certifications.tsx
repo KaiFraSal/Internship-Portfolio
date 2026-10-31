@@ -28,7 +28,7 @@ export default function Certifications() {
             
             <h2 className="text-7xl font-bold mb-10 z-10 text-center">Certifications</h2>
 
-            <div className="flex flex-col items-center min-[860px]:flex-row-reverse min-[860px]:justify-center min-[860px]:items-center gap-8 w-full mb-7">
+            <div className="flex flex-col items-center min-h-[620px] min-[860px]:flex-row-reverse min-[860px]:justify-center min-[860px]:items-center gap-8 w-full mb-7">
                 
                 <div id="default-carousel" className="relative w-full min-[860px]:w-1/2 max-w-md">
                     <div className="relative h-72 overflow-hidden rounded-2xl min-[860px]:h-96 border border-white/20 backdrop-blur-md">

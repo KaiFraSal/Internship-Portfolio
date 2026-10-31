@@ -27,7 +27,7 @@ export default function Navbar() {
 					<div className={`${isMenuOpen ? "block" : "hidden"} w-full md:block md:w-auto`} id="navbar-default">
 						<ul className="font-medium flex flex-col p-4 md:p-0 mt-4 rounded-2xl bg-black/40 md:bg-transparent md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0">
 							<li>
-								<a href="#Header-Section" className="block py-2 px-3 text-amber-400 font-semibold md:p-0 hover:text-amber-300 transition" aria-current="page">Home</a>
+								<a href="#Header-Section" className="block py-2 px-3 text-slate-200 font-semibold md:p-0 hover:text-amber-300 transition" aria-current="page">Home</a>
 							</li>
 							<li>
 								<a href="#Projects-Section" className="block py-2 px-3 text-slate-200 md:p-0 hover:text-amber-400 transition">Projects</a>
