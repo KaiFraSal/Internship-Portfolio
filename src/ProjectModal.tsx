@@ -41,7 +41,7 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
                 }
             }}
         >
-            <div className="bg-zinc-950 border border-zinc-700 w-full max-w-5xl max-h-[90vh] overflow-y-auto rounded-2xl p-6 relative text-white shadow-2xl">
+            <div className="bg-zinc-950 border border-zinc-700 w-full max-w-5xl max-h-[90vh] overflow-y-auto rounded-2xl p-2 sm:p-6 relative text-white shadow-2xl">
                 
                 <button 
                     onClick={onClose}
@@ -66,14 +66,14 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
                     </div>
                 </div>
 
-                <div className="flex justify-center mt-5 max-h-100 flex-nowrap gap-4">
+                <div className="flex justify-between mt-5 max-h-100 flex-nowrap gap-1 sm:gap-4">
                     <button 
                         onClick={() => {
                             if(pageNumber > 0){
                                 setPageNumber(pageNumber - 1);
                             }
                         }}
-                        className="hover:bg-white/20 active:bg-white/40 text-white px-4 rounded-xl flex items-center cursor-pointer font-semibold select-none transition"
+                        className="hover:bg-white/20 active:bg-white/40 text-white px-1 sm:px-4 rounded-xl flex items-center cursor-pointer font-semibold select-none transition"
                     >
                         <svg className="w-5 h-5 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
                             <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m15 19-7-7 7-7"/>
@@ -81,7 +81,7 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
                     </button>
                     <div 
                         onClick={() => setZoomedImg(project.popupImages[pageNumber])}
-                        className="bg-zinc-900 border border-zinc-800 rounded-xl overflow-hidden p-2 shadow-inner w-full max-w-3xl flex justify-center items-center cursor-pointer group relative transition hover:border-blue-500"
+                        className="bg-zinc-900 border border-zinc-800 rounded-xl overflow-hidden p-2 shadow-inner w-full max-w-3xl min-w-[250px] flex justify-center items-center cursor-pointer group relative transition hover:border-blue-500"
                     >
                         <img 
                             src={project.popupImages[pageNumber]} 
@@ -98,7 +98,7 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
                                 setPageNumber(pageNumber + 1);
                             }
                         }}
-                        className="hover:bg-white/20 active:bg-white/40 text-white px-4 rounded-xl flex items-center cursor-pointer font-semibold select-none transition"
+                        className="hover:bg-white/20 active:bg-white/40 text-white px-1 sm:px-4 rounded-xl flex items-center cursor-pointer font-semibold select-none transition"
                     >
                         <svg className="w-5 h-5 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
                             <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m9 5 7 7-7 7"/>
@@ -123,7 +123,7 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
                             onClick={() => {
                                 setPageNumber(idx);
                             }}
-                            className={`w-[180px] h-[110px] flex-shrink-0 ${
+                            className={`w-[120px] h-[90px] sm:w-[180px] sm:h-[110px] flex-shrink-0 ${
                                 pageNumber === idx 
                                     ? "opacity-100 ring-2 ring-blue-500 border-blue-500" 
                                     : "opacity-40 border-zinc-800"
