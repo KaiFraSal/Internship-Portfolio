@@ -29,7 +29,7 @@ export default function Skills() {
 			<div className="w-full md:w-[45%] flex flex-col">
 				<h3 className="text-4xl font-bold mb-3">Frameworks & Libraries</h3>
 				<p className="text-xl mb-3 text-black">Powerful toolsets that streamline the development process that I have adopted and adapted to.</p>
-				<p className="text-lg text-black">Frameworks & Libraries: React, React Native, Tailwind, Flutter</p>
+				<p className="text-lg text-black">Frameworks & Libraries: React, React Native, Expo, Tailwind, Flutter</p>
 			</div>
 			<div className="w-full md:w-[45%] h-[300px] bg-black/20 border border-white/20 backdrop-blur-md rounded-2xl relative p-6 shadow-xl">
 				<img src="/assets/react.svg" className="w-40 absolute top-8 left-5"/>
