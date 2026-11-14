@@ -24,7 +24,7 @@ export default function Header() {
                         <div className="headerCardTitle">
                             Skills
                         </div>
-                        <div className="w-full h-[300px] border border-white/20 rounded-2xl relative p-6 shadow-xl">
+                        <div className="w-full h-[300px] border border-white/20 relative p-6 shadow-xl">
                             <img src="/assets/react.svg" className="w-30 absolute top-8 left-5"/>
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" className="w-25 absolute top-8 right-5 -rotate-9"/>
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/supabase/supabase-original.svg" className="w-25 absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/4 rotate-9"/>
@@ -35,7 +35,7 @@ export default function Header() {
                         <div className="headerCardTitle">
                             Certifications
                         </div>
-                        <div className="w-full h-[300px] border border-white/20 rounded-2xl relative p-6 shadow-xl">
+                        <div className="w-full h-[300px] border border-white/20 relative p-6 shadow-xl">
                             <img src="/assets/cyberops-associate.png" className="w-30 absolute top-24 left-5 rotate-9"/>
                             <img src="/assets/microsoft-office-specialist-excel-associate-office-2019.png" className="w-30 absolute top-8 right-5"/>
                         </div>
