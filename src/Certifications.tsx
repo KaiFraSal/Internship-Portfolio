@@ -26,7 +26,7 @@ export default function Certifications() {
 
         <div className="max-w-6xl w-full mx-auto px-4 flex flex-col items-center">
             
-            <h2 className="text-6xl sm:text-7xl font-bold mb-10 z-10 text-center">Certifications</h2>
+            <h2 className="text-6xl sm:text-7xl. font-bold mb-10 z-10 text-center">Certifications</h2>
 
             <div className="flex flex-col items-center min-h-[620px] min-[860px]:flex-row-reverse min-[860px]:justify-center min-[860px]:items-center gap-8 w-full mb-7">
                 
@@ -69,7 +69,7 @@ export default function Certifications() {
                         onClick={handlePrev}
                         className="absolute top-1/2 -translate-y-1/2 start-0 z-20 flex items-center justify-center w-10 h-10 cursor-pointer group focus:outline-none -left-4 sm:-left-6"
                     >
-                        <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-slate-800/80 border border-slate-700 text-white group-hover:bg-slate-700">
+                        <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-orange-400 hover:bg-orange-500 active:bg-orange-300 text-white">
                             <svg className="w-5 h-5 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
                                 <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m15 19-7-7 7-7"/>
                             </svg>
@@ -82,7 +82,7 @@ export default function Certifications() {
                         onClick={handleNext}
                         className="absolute top-1/2 -translate-y-1/2 end-0 z-20 flex items-center justify-center w-10 h-10 cursor-pointer group focus:outline-none -right-4 sm:-right-6"
                     >
-                        <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-slate-800/80 border border-slate-700 text-white group-hover:bg-slate-700">
+                        <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-orange-400 hover:bg-orange-500 active:bg-orange-300 text-white">
                             <svg className="w-5 h-5 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
                                 <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m9 5 7 7-7 7"/>
                             </svg>
