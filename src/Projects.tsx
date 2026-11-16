@@ -70,13 +70,13 @@ export default function Projects() {
                             }`}
                         >
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-y-8 justify-center justify-items-center max-w-4xl mx-auto p-2">
-                            {pageProjects.map((project) => (
-                                <ProjectCard
-                                    key={project.id}
-                                    project={project}
-                                    onClick={() => setSelectedProject(project)}
-                                />
-                            ))}
+                                {pageProjects.map((project) => (
+                                    <ProjectCard
+                                        key={project.id}
+                                        project={project}
+                                        onClick={() => setSelectedProject(project)}
+                                    />
+                                ))}
                             </div>
                         </div>
                     ))}
@@ -103,56 +103,53 @@ export default function Projects() {
 
                 {projectPages.length > 1 && (
                     <>
-                    <button
-                        type="button"
-                        onClick={handlePrev}
-                        className="absolute top-1/2 -translate-y-1/2 start-0 z-20 flex items-center justify-center w-10 h-10 cursor-pointer group focus:outline-none -left-2 sm:-left-5"
-                    >
-                        <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-slate-800/80 border border-slate-700 text-white group-hover:bg-slate-700 shadow-lg">
-                            <svg
-                                className="w-5 h-5 rtl:rotate-180"
-                                aria-hidden="true"
-                                xmlns="http://www.w3.org/2000/svg"
-                                fill="none"
-                                viewBox="0 0 24 24"
-                            >
-                                <path
-                                    stroke="currentColor"
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    strokeWidth="2"
-                                    d="m15 19-7-7 7-7"
-                                />
-                            </svg>
-                            <span className="sr-only">Previous</span>
-                        </span>
-                    </button>
+                        {/* <button
+                            type="button"
+                            onClick={handlePrev}
+                            className="absolute top-1/2 -translate-y-1/2 start-0 z-20 flex items-center justify-center w-10 h-10 cursor-pointer group focus:outline-none -left-2 sm:-left-5"
+                        >
+                            <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-slate-800/80 border border-slate-700 text-white group-hover:bg-slate-700 shadow-lg">
+                                <svg
+                                    className="w-5 h-5 rtl:rotate-180"
+                                    aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                >
+                                    <path
+                                        stroke="currentColor"
+                                        strokeLinecap="round"
+                                        strokeLinejoin="round"
+                                        strokeWidth="2"
+                                        d="m15 19-7-7 7-7"
+                                    />
+                                </svg>
+                                <span className="sr-only">Previous</span>
+                            </span>
+                        </button> */}
 
-                    <button
-                        type="button"
-                        onClick={handleNext}
-                        className="absolute top-1/2 -translate-y-1/2 end-0 z-20 flex items-center justify-center w-10 h-10 cursor-pointer group focus:outline-none -right-2 sm:-right-5"
-                    >
-                        <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-slate-800/80 border border-slate-700 text-white group-hover:bg-slate-700 shadow-lg">
-                            <svg
-                                className="w-5 h-5 rtl:rotate-180"
-                                aria-hidden="true"
-                                xmlns="http://www.w3.org/2000/svg"
-                                fill="none"
-                                viewBox="0 0 24 24"
-                            >
-                                <path
-                                    stroke="currentColor"
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    strokeWidth="2"
-                                    d="m9 5 7 7-7 7"
-                                />
+                        <button 
+                            type="button"
+                            onClick={handlePrev}
+                            aria-label="Previous Slide"
+                            className="bg-sky-400 hover:bg-sky-600 active:bg-sky-300 text-white p-3 absolute top-1/2 -translate-y-1/2 start-0 z-20 rounded-full flex items-center cursor-pointer font-semibold select-none transition"
+                        >
+                            <svg className="w-5 h-5 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                                <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m15 19-7-7 7-7"/>
                             </svg>
-                            <span className="sr-only">Next</span>
-                        </span>
-                    </button>
-                </>
+                        </button>
+
+                        <button 
+                            type="button"
+                            onClick={handleNext}
+                            aria-label="Next Slide"
+                            className="bg-sky-400 hover:bg-sky-600 active:bg-sky-300 text-white p-3 absolute top-1/2 -translate-y-1/2 end-0 z-20 rounded-full flex items-center cursor-pointer font-semibold select-none transition"
+                        >
+                            <svg className="w-5 h-5 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                                <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m9 5 7 7-7 7"/>
+                            </svg>
+                        </button>
+                    </>
                 )}
             </div>
 
