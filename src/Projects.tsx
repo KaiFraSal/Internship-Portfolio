@@ -4,36 +4,35 @@ import ProjectCard from "./ProjectCard";
 import ProjectModal from "./ProjectModal";
 import type { Project } from "./data/projectsData";
 
+function chunkArray<T>(array: T[], size: number): T[][] {
+    const chunks: T[][] = [];
+    for (let i = 0; i < array.length; i += size) {
+        chunks.push(array.slice(i, i + size));
+    }
+    return chunks;
+}
+
 export default function Projects() {
 
     const [selectedProject, setSelectedProject] = useState<Project | null>(null);
     const [currentIndex, setCurrentIndex] = useState(0);
-
-    function chunkArray<T>(array: T[], size: number): T[][] {
-        const chunks: T[][] = [];
-        for (let i = 0; i < array.length; i += size) {
-            chunks.push(array.slice(i, i + size));
-        }
-        return chunks;
-    }
-
     const [gridSize, setGridSize] = useState<number>(() =>
-        typeof window !== "undefined" && window.innerWidth <= 768 ? 2 : 4
+        typeof window !== "undefined" && window.innerWidth <= 767 ? 2 : 4
     );
 
     useEffect(() => {
-        const handleResize = () => {
-            const newGridSize = window.innerWidth <= 768 ? 2 : 4;
-            setGridSize(newGridSize);
+        const mediaQuery = window.matchMedia("(max-width: 767px)");
+
+        const handleChange = (event: MediaQueryListEvent | MediaQueryList) => {
+            setGridSize(event.matches ? 2 : 4);
+            setCurrentIndex(0);
         };
 
-        window.addEventListener("resize", handleResize);
-        return () => window.removeEventListener("resize", handleResize);
-    }, []);
+        handleChange(mediaQuery);
 
-    useEffect(() => {
-        setCurrentIndex(0);
-    }, [gridSize]);
+        mediaQuery.addEventListener("change", handleChange);
+        return () => mediaQuery.removeEventListener("change", handleChange);
+    }, []);
 
     const projectPages = chunkArray(projectsData, gridSize);
 
