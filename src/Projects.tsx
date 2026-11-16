@@ -103,31 +103,6 @@ export default function Projects() {
 
                 {projectPages.length > 1 && (
                     <>
-                        {/* <button
-                            type="button"
-                            onClick={handlePrev}
-                            className="absolute top-1/2 -translate-y-1/2 start-0 z-20 flex items-center justify-center w-10 h-10 cursor-pointer group focus:outline-none -left-2 sm:-left-5"
-                        >
-                            <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-slate-800/80 border border-slate-700 text-white group-hover:bg-slate-700 shadow-lg">
-                                <svg
-                                    className="w-5 h-5 rtl:rotate-180"
-                                    aria-hidden="true"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    fill="none"
-                                    viewBox="0 0 24 24"
-                                >
-                                    <path
-                                        stroke="currentColor"
-                                        strokeLinecap="round"
-                                        strokeLinejoin="round"
-                                        strokeWidth="2"
-                                        d="m15 19-7-7 7-7"
-                                    />
-                                </svg>
-                                <span className="sr-only">Previous</span>
-                            </span>
-                        </button> */}
-
                         <button 
                             type="button"
                             onClick={handlePrev}
